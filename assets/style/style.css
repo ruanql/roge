@@ -424,17 +424,17 @@ body {
 
 .parceiros {
   background-color: #414141;
-  background-image: url("/assets/img/");
+  background-image: url("/assets/img/futuro-roge.jpg");
   background-size: cover;
   background-position: auto;
   background-blend-mode: overlay;
   width: 100%;
-  height: 85vh;
+  height: 75vh;
   position: relative;
 }
 
 .parceiros .row .text-white {
-  padding: 15vmin 0vmin 5vmin 25vmin;
+  padding: 15vmin 0vmin 5vmin 0vmin;
 }
 
 .parceiros .row .industrias {
@@ -446,6 +446,13 @@ body {
 }
 
 .text-white h2 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.text-white h3 {
   font-size: 42px;
   font-weight: 900;
   line-height: 3rem;
@@ -457,22 +464,6 @@ body {
   font-weight: 500;
   margin-top: 10px;
   text-decoration: none;
-}
-
-.text-white a {
-  color: #fff;
-  text-transform: uppercase;
-  border-bottom: 2px solid;
-}
-
-.text-white a:hover {
-  color: #fff;
-  border-bottom: 2px solid transparent;
-  text-decoration: none;
-}
-
-.text-white i {
-  padding-left: 8px;
 }
 
 .parceiros .carousel-item img {
