@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Roge</title>
     <link rel="stylesheet" href="/assets/style/style.css">
+    <link rel="stylesheet" href="/Content/Plugins/Slick/slick.min.css">
+    <link rel="stylesheet" href="/Content/Plugins/Slick/slick-theme.css">
     <link rel="stylesheet" href="/Content/Plugins/Bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -90,6 +92,31 @@
         </div> 
     </div>
     </section>
+
+    <section class="marcas">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-12 text-white text-center">
+          <h3>Marcas</h3>
+          <p>Confira nossas parcerias de sucesso:<br><br></p>
+          <div class="montadoras logos col-12 text-center">
+              <div class="logo"><img src="/assets/img/logos-industrias/peg.jpg" alt="">
+              </div>
+              <div class="logo"><img src="/assets/img/logos-industrias/peg.jpg" alt="">
+              </div>
+               <div class="logo"><img src="/assets/img/logos-industrias/peg.jpg" alt="">
+               </div>
+               <div class="logo"><img src="/assets/img/logos-industrias/peg.jpgg" alt="">
+               </div>
+               <div class="logo"><img src="/assets/img/logos-industrias/peg.jpg" alt="">
+               </div>
+               <div class="logo"><img src="/assets/img/logos-industrias/peg.jpg" alt="">
+               </div>
+          </div>
+      </div>
+    </div>
+  </div> 
+  </section>
 
     <section class="buy">
       <div class="container">
@@ -340,57 +367,10 @@
 </body>
 </html>
 
-<script type="text/javascript" src="/Scripts/jquery.min.js"></script>
-<script src="https://unpkg.com/popper.js@1.12.9/dist/umd/popper.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="/Content/Plugins/Slick/slick.min.js"></script>
 <script src="/Content/Plugins/scrollTo/jquery.scrollTo.js"></script>
 <script src="/Content/Plugins/scrollTo/jquery.localScroll.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
 <script src="/Scripts/main.js"></script>
 <script src="/Content/Plugins/Bootstrap/bootstrap.min.js"></script>
-
-<script>
-
-
- 
-
-  //Carousel
-
-  (function ($) {
-  "use strict";
-  // Auto-scroll
-  $('#myCarousel').carousel({
-    interval: 5000
-  });
-
-  // Control buttons
-  $('.next').click(function () {
-    $('.carousel').carousel('next');
-    return false;
-  });
-  $('.prev').click(function () {
-    $('.carousel').carousel('prev');
-    return false;
-  });
-
-  // On carousel scroll
-  $("#myCarousel").on("slide.bs.carousel", function (e) {
-    var $e = $(e.relatedTarget);
-    var idx = $e.index();
-    var itemsPerSlide = 2;
-    var totalItems = $(".carousel-item").length;
-    if (idx >= totalItems - (itemsPerSlide - 1)) {
-      var it = itemsPerSlide -
-          (totalItems - idx);
-      for (var i = 0; i < it; i++) {
-        // append slides to end 
-        if (e.direction == "left") {
-          $(
-            ".carousel-item").eq(i).appendTo(".carousel-inner");
-        } else {
-          $(".carousel-item").eq(0).appendTo(".carousel-inner");
-        }
-      }
-    }
-  });
-})
-(jQuery);
-</script>
