@@ -890,20 +890,27 @@ body {
   background-color: #505050;
   background-image: url("/assets/img/fundacao.jpg");
   background-size: cover;
-  background-position: auto;
+  background-position: center;
   background-blend-mode: overlay;
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   padding: 0 10vmin;
 }
 
 .text-fund {
   color: #fff;
-  padding-top: 25vmin;
+  padding: 10vmin 0;
 }
 
 .text-fund h2 {
   font-size: 42px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.text-fund h3 {
+  font-size: 32px;
   font-weight: 900;
   line-height: 3rem;
   text-transform: uppercase;
