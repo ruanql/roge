@@ -19,11 +19,12 @@ $(window).scroll(function () {
  // Carousel marcas
 
  $(document).ready(function(){
-  $('.montadoras').slick({
+  $('.logomarcas').slick({
   slidesToShow: 5,
   slidesToScroll: 1,
   prevArrow: '<i class="left-arrow"></i>',
   nextArrow: '<i class="right-arrow"></i>',
+  dots: true,
   autoplay: true,
   autoplaySpeed: 2000,
   responsive: 

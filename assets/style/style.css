@@ -202,6 +202,14 @@ body {
   text-transform: uppercase;
 }
 
+.main-header .menu ul button a {
+  color: #fff;
+}
+
+.main-header .menu ul button a:hover {
+  color: #fff;
+}
+
 .main-header .menu ul a:hover {
   color: #cb3638;
 }
@@ -269,26 +277,25 @@ body {
   color: #fff;
   text-transform: uppercase;
   padding: 6px 25px;
-  cursor: pointer;
   border-radius: 50px;
   transition: 0.2s all;
 }
 
-.btn-red a {
-  color: #fff;
-}
-
 .btn-red i {
-  padding-left: 12px;
+  margin-left: 12px;
 }
 
 .btn-red:hover {
   background: #8f1b21;
   cursor: pointer;
-  color: #ffffff !important;
-  padding: 6px 25px;
+  letter-spacing: 0.02rem;
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+}
+
+
+.btn-red a {
+  color: #fff;
 }
 
 .btn-red a:hover {
@@ -358,70 +365,6 @@ body {
   text-decoration: none;
 }
 
-
-@media (max-width: 768px) {
-  .sobre .row .col-md-6 .beneficios video {
-    width: 100%;
-  }
-
-  .sobre .row .col-md-6 .cartao-about {
-    text-align: center !important;
-  }
-
-  .parceiros .row .text-white {
-    padding: 10vmin 5vmin 5vmin 5vmin !important;
-    text-align: center !important;
-  }
-
-  .parceiros .row .industrias {
-    padding: 2vmin 35vmin !important;
-    text-align: center !important;
-  }
-}
-
-/* Tablet and up */
-
-/* Desktop and up */
-
-/* Section-2 parceiros */
-
-@media screen and (min-width: 768px) {
-  .parceiros .carousel-inner .carousel-item.active,
-  .parceiros .carousel-inner .carousel-item-next,
-  .parceiros .carousel-inner .carousel-item-prev {
-    display: flex;
-  }
-
-  .parceiros .carousel-inner .carousel-item-right.active,
-  .parceiros .carousel-inner .carousel-item-next {
-    transform: translateX(100%);
-  }
-
-  .parceiros .carousel-inner .carousel-item-left.active,
-  .parceiros .carousel-inner .carousel-item-prev {
-    transform: translateX(-100%);
-  }
-
-  .parceiros .carousel-inner .carousel-item-right,
-  .parceiros .carousel-inner .carousel-item-left {
-    transform: translateX(0);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .parceiros .carousel-inner .carousel-item.active,
-  .parceiros .carousel-inner .carousel-item-next,
-  .parceiros .carousel-inner .carousel-item-prev {
-    display: flex;
-  }
-  
-
-  .parceiros .carousel-inner .carousel-item-right,
-  .parceiros .carousel-inner .carousel-item-left {
-    transform: translateX(0);
-  }
-}
-
 .parceiros {
   background-color: #414141;
   background-image: url("/assets/img/futuro-roge.jpg");
@@ -437,44 +380,27 @@ body {
   padding: 15vmin 0vmin 5vmin 0vmin;
 }
 
-.parceiros .row .industrias {
-  padding: 0vmin 25vmin 5vmin 25vmin;
+
+@media (max-width: 768px) {
+  .sobre .row .col-md-6 .beneficios video {
+    width: 100%;
+  }
+
+  .sobre .row .col-md-6 .cartao-about {
+    text-align: center !important;
+  }
+
+  .marcas .row .text-white {
+    padding: 10vmin 1vmin !important;
+    text-align: center !important;
+  }
+
+  .slick-slide img {
+    display: initial!important;
+  }
 }
 
-.text-white {
-  color: #fff;
-}
-
-.text-white h2 {
-  font-size: 32px;
-  font-weight: 900;
-  line-height: 3rem;
-  text-transform: uppercase;
-}
-
-.text-white h3 {
-  font-size: 42px;
-  font-weight: 900;
-  line-height: 3rem;
-  text-transform: uppercase;
-}
-
-.text-white p {
-  font-size: 20px;
-  font-weight: 500;
-  margin-top: 10px;
-  text-decoration: none;
-}
-
-.parceiros .carousel-item img {
-  border-radius: 8px;
-  transition: all ease 0.4s;
-}
-
-.parceiros .carousel-item img:hover {
-  -webkit-transform: scale(1.25);
-  transform: scale(1.25);
-}
+/* Section-2 marcas */
 
 .marcas {
   background-image: url("/assets/img/marcas.jpg");
@@ -489,8 +415,8 @@ body {
   padding: 15vmin 0vmin 5vmin 0vmin;
 }
 
-.marcas .row .industrias {
-  padding: 0vmin 25vmin 5vmin 25vmin;
+.marcas .row .logomarcas {
+  padding: 0vmin 25vmin ;
 }
 
 .text-white {
@@ -516,6 +442,21 @@ body {
   font-weight: 500;
   margin-top: 10px;
   text-decoration: none;
+}
+
+.marcas .logomarcas img {
+  border-radius: 8px;
+  transition: all ease 0.4s;
+  margin: 1em;
+}
+
+.marcas .logomarcas img:hover {
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+}
+
+.slick-dots {
+  bottom: initial!important;
 }
 
 /* Section - 3 comprar */
@@ -532,67 +473,94 @@ body {
   padding-bottom: 5vmin;
 }
 
-#video-beneficios {
-  width: 100%;
-  padding-bottom: 25px;
+.text-blue {
+  color: #00377b;
 }
 
-.left-buy {
-  text-align: right;
-  right: -15vmin;
-  z-index: 1;
-  display: none;
+.text-blue h2 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
 }
 
-.left-buy p {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 150px;
+.text-blue h3 {
+  color: #0099ff;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
 }
 
-.right-buy {
+.buy .how-to {
   text-align: left;
-  left: -15vmin;
-  z-index: 1;
-  display: none;
+  align-self: center;
 }
 
-.right-buy p {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 150px;
+.buy .text-cards {
+  padding: 8em 1em 0 1em;
 }
+
+.buy .text-cards h1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+.buy .card-online {
+  background: url('/assets/img/card-online.png') no-repeat;
+  background-position: center;
+  height: 310px;
+  transition: all ease 0.2s;
+}
+
+.buy .card-online:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.buy .card-raiz {
+  background: url('/assets/img/card-raiz.png') no-repeat;
+  background-position: center;
+  height: 310px;
+  transition: all ease 0.2s;
+}
+
+.buy .card-raiz:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.buy .card-inbox {
+  background: url('/assets/img/card-inbox.png') no-repeat;
+  background-position: center;
+  height: 310px;
+  transition: all ease 0.2s;
+}
+
+.buy .card-inbox:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.buy .text-legal h2 {
+  color: var(--light-black);
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 2rem;
+  text-transform: uppercase;
+  text-align: right;
+  padding-top: 5vmin;
+}
+
 
 @media (max-width: 768px) {
-  .buy video {
-    display: none;
-  }
-
-  .left-buy {
-    right: 0vmin;
-    z-index: 1;
-    display: initial;
-  }
-
-  .left-buy p {
-    margin-bottom: 5vmin;
-    text-align: center;
-  }
-
-  .right-buy {
-    left: 0vmin;
-    z-index: 1;
-    display: initial;
-  }
-
-  .right-buy p {
-    margin-bottom: 5vmin;
-    text-align: center;
-  }
-
-  .buy .btn-blue {
-    align-self: center;
-  }
+  
 }
 
 /* Section - 4 depoimentos */
@@ -622,12 +590,20 @@ body {
   }
 }
 
+.depo {
+  background: var(--bggradient);
+  width: 100%;
+  height: 75vh;
+  position: relative;
+  color: #fff;
+}
+
 .depo .row {
   left: -3vmin;
 }
 
 .depoimentos h1 {
-  color: #2e3545;
+  color: #ffffff;
   font-size: 36px;
   font-weight: 900;
   line-height: 3rem;
@@ -636,7 +612,7 @@ body {
 }
 .depoimentos p {
   font-size: 20px;
-  color: #2e3545;
+  color: #fff;
   font-weight: 500;
   margin-top: 10px;
   margin-bottom: 15px;
