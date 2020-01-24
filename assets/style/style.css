@@ -811,58 +811,6 @@ body {
   }
 }
 
-/* app como comprar */
-
-.comprar {
-  padding: 20vmin 0vmin;
-}
-
-.comprar .row .col-md-6 .phone img {
-  width: 125%;
-  z-index: 1;
-}
-
-.comprar .row .col-md-6:last-child {
-  position: relative;
-}
-
-.comprar .row .col-md-6 .cartao-buy {
-  position: absolute;
-  top: 5vmin;
-  left: -10vmin;
-  background: #d4252c;
-  color: #fff;
-  padding: 7vmin 13vmin 7vmin 13vmin;
-}
-
-.comprar .row .col-md-6 .cartao-buy h2 {
-  font-size: 42px;
-  font-weight: 900;
-  line-height: 3rem;
-  text-transform: uppercase;
-}
-
-.comprar .row .col-md-6 .cartao-buy p {
-  font-size: 20px;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.comprar .row .col-md-6 .cartao-buy a {
-  color: #fff;
-  font-weight: 700;
-  text-transform: uppercase;
-  border-bottom: 2px solid;
-}
-
-.comprar .row .col-md-6 .cartao-buy i {
-  padding-left: 8px;
-}
-
-.comprar .row .col-md-6 .cartao-buy a:hover {
-  color: #fff;
-  text-decoration: none;
-}
 
 @media only screen and (max-width: 768px) {
   .sobre .row .col-md-6 .beneficios video {
@@ -978,7 +926,7 @@ body {
 }
 
 .trabalhe .row .text-blue {
-  padding: 15vmin 10vmin 10vmin 0vmin;
+  padding: 15vmin 10vmin 10vmin 10vmin;
 }
 
 .trabalhe .text-blue {
@@ -1011,6 +959,24 @@ body {
 .trabalhe .text-blue a {
   color: var(--light-black);
   border-color: var(--light-black);
+}
+
+@media only screen and (max-width: 768px) {
+  .fundacao {
+    height: auto;
+  }
+
+  .fundacao .row .text-white {
+    padding: 5vmin 5vmin;
+    text-align: center;
+  }
+
+  
+
+  .trabalhe .row .text-blue {
+    text-align: center;
+  }
+  
 }
 
 /* Social */
