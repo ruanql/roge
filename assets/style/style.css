@@ -398,6 +398,11 @@ body {
   .slick-slide img {
     display: initial!important;
   }
+
+  .parceiros .row .text-white {
+    padding: 15vmin 5vmin 0vmin 5vmin;
+    text-align: center;
+  }
 }
 
 /* Section-2 marcas */
@@ -560,7 +565,14 @@ body {
 
 
 @media (max-width: 768px) {
-  
+
+  .buy .text-blue {
+    text-align: center;
+  }
+  .buy .text-legal h2 {
+    text-align: center;
+  }
+
 }
 
 /* Section - 4 depoimentos */
@@ -572,6 +584,11 @@ body {
 
   .depo .depoimentos p {
     text-align: center;
+    padding-right: initial;
+  }
+
+  .depo .img-depoimentos img{
+    display: none;
   }
 
   .depo .row {
@@ -593,21 +610,20 @@ body {
 .depo {
   background: var(--bggradient);
   width: 100%;
-  height: 75vh;
+  height: auto;
   position: relative;
 }
 
-.depo .row {
-  left: -3vmin;
+.depo .img-depoimentos {
+  top: 47px;
 }
-
 
 .depoimentos h1 {
   color: #ffffff;
   font-size: 36px;
   font-weight: 900;
   line-height: 3rem;
-  text-align: end;
+  text-align: left;
   text-transform: uppercase;
 }
 .depoimentos p {
@@ -616,7 +632,8 @@ body {
   font-weight: 500;
   margin-top: 10px;
   margin-bottom: 15px;
-  text-align: end;
+  text-align: left;
+  padding-right: 5em;
 }
 
 .depo .card-title {
@@ -629,11 +646,23 @@ body {
 
 .depo .card h1 {
   color: #00377b;
+  text-transform: none;
+}
+
+.depo .card .text-muted {
+  color: #0099ff!important;
+  font-size: 1.2em;
+}
+
+.depo .card p {
+  color: #2e3545;
+  padding-right: initial;
+  font-size: 16px;
 }
 
 /* Tablet and up */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1400px) {
   .depo .carousel-inner .active,
   .depo .carousel-inner .active + .carousel-item {
     display: block;
@@ -698,7 +727,7 @@ body {
 
 /* Desktop and up */
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1601px) {
   .depo .carousel-inner .active,
   .depo .carousel-inner .active + .carousel-item,
   .depo .carousel-inner .active + .carousel-item + .carousel-item {
