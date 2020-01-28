@@ -248,7 +248,7 @@ body {
 
 .header-home .header-text h1 {
   color: #ffffff;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 900;
   line-height: 3rem;
   text-transform: uppercase;
@@ -286,11 +286,12 @@ body {
 }
 
 .btn-red:hover {
-  background: #8f1b21;
+  background: var(--roge-blue);
+  color: #fff;
   cursor: pointer;
   letter-spacing: 0.02rem;
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.17);
 }
 
 
@@ -300,6 +301,38 @@ body {
 
 .btn-red a:hover {
   color: #fff;
+  text-decoration: none;
+}
+
+.btn-red-viva {
+  background: var(--bggradient);
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 6px 25px;
+  border-radius: 50px;
+  transition: 0.3s ease all;
+}
+
+.btn-red-viva i {
+  margin-left: 12px;
+}
+
+.btn-red-viva:hover {
+  background: #fff;
+  color: var(--roge-red);
+  cursor: pointer;
+  letter-spacing: 0.02rem;
+  -webkit-box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.57);
+}
+
+.btn-red-viva a {
+  color: #fff;
+}
+
+.btn-red-viva:hover a {
+  color: var(--roge-red);
   text-decoration: none;
 }
 
@@ -331,22 +364,32 @@ body {
 /* Section-1 sobre */
 
 .sobre {
-  padding: 20vmin 0vmin 20vmin 0vmin;
+  padding-top: 100px;
   background: var(--bggradient);
+  height: auto;
+  overflow-y: hidden;
 }
 
-.sobre .row .col-md-6 .revolucao img {
+ .revolucao {
+  top: 70px;
+  position: relative;
+  z-index: 2;
+  overflow-y: hidden;
+}
+
+.revolucao img {
   width: 100%;
 }
 
 .sobre .row .col-md-6 .cartao-about {
+  margin-top: 70px;
   color: #fff;
   padding: 0vmin 10vmin 5vmin 10vmin;
   z-index: 1;
 }
 
 .sobre .row .col-md-6 .cartao-about h2 {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 900;
   line-height: 3rem;
   text-transform: uppercase;
@@ -365,19 +408,39 @@ body {
   text-decoration: none;
 }
 
-.parceiros {
+.varejo {
   background-color: #414141;
   background-image: url("/assets/img/futuro-roge.jpg");
   background-size: cover;
   background-position: auto;
   background-blend-mode: overlay;
-  width: 100%;
-  height: 75vh;
   position: relative;
+  width: 100%;
+  height: 70vh;
 }
 
-.parceiros .row .text-white {
-  padding: 15vmin 0vmin 5vmin 0vmin;
+.varejo .row .text-white {
+  padding: 15vmin 40vmin 5vmin 0vmin;
+}
+
+.varejo .row .text-white h2 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.varejo .row .text-white h3 {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.varejo .row .text-white p {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 
@@ -399,7 +462,7 @@ body {
     display: initial!important;
   }
 
-  .parceiros .row .text-white {
+  .varejo .row .text-white {
     padding: 15vmin 5vmin 0vmin 5vmin;
     text-align: center;
   }
@@ -429,7 +492,7 @@ body {
 }
 
 .text-white h2 {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 900;
   line-height: 3rem;
   text-transform: uppercase;
@@ -612,10 +675,34 @@ body {
   width: 100%;
   height: auto;
   position: relative;
+  overflow: hidden;
 }
 
 .depo .img-depoimentos {
-  top: 47px;
+  top: 49px;
+}
+
+.depo .img-depoimentos img {
+  width: 100%;
+}
+
+.img-rounded  {
+  position: relative;
+  top: 70px;
+  right: 64px;
+  z-index: 1;
+}
+
+.img-rounded img {
+  border-radius: 10em;
+}
+
+.depo .col-depo {
+  padding: 5em;
+}
+
+.depo .col-depo .col-md-12 {
+  padding: 0em 4em;
 }
 
 .depoimentos h1 {
@@ -636,11 +723,16 @@ body {
   padding-right: 5em;
 }
 
+.depo .card-body {
+  padding: 1.25em 1.25em 1.25em 3.25em;
+}
+
 .depo .card-title {
   margin-bottom: 0rem;
 }
 
 .depo .card {
+  background: #eeeeee;
   border-radius: 1rem;
 }
 
@@ -660,166 +752,7 @@ body {
   font-size: 16px;
 }
 
-/* Tablet and up */
-
-@media screen and (min-width: 1400px) {
-  .depo .carousel-inner .active,
-  .depo .carousel-inner .active + .carousel-item {
-    display: block;
-  }
-  .depo
-    .carousel-inner
-    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-  .depo
-    .carousel-inner
-    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
-    + .carousel-item {
-    -webkit-transition: none;
-    transition: none;
-  }
-  .depo .carousel-inner .carousel-item-next,
-  .depo .carousel-inner .carousel-item-prev {
-    position: relative;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  .depo
-    .carousel-inner
-    .active.carousel-item
-    + .carousel-item
-    + .carousel-item
-    + .carousel-item {
-    position: absolute;
-    top: 0;
-    right: -50%;
-    z-index: -1;
-    display: block;
-    visibility: visible;
-  }
-  /* left or forward direction */
-  .depo .active.carousel-item-left + .carousel-item-next.carousel-item-left,
-  .depo .carousel-item-next.carousel-item-left + .carousel-item {
-    position: relative;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-  }
-  /* farthest right hidden item must be abso position for animations */
-  .depo .carousel-inner .carousel-item-prev.carousel-item-right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    display: block;
-    visibility: visible;
-  }
-  /* right or prev direction */
-  .depo .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-  .depo .carousel-item-prev.carousel-item-right + .carousel-item {
-    position: relative;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-    display: block;
-    visibility: visible;
-  }
-}
-
-/* Desktop and up */
-
-@media screen and (min-width: 1601px) {
-  .depo .carousel-inner .active,
-  .depo .carousel-inner .active + .carousel-item,
-  .depo .carousel-inner .active + .carousel-item + .carousel-item {
-    display: block;
-  }
-  .depo
-    .carousel-inner
-    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-  .depo
-    .carousel-inner
-    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
-    + .carousel-item,
-  .depo
-    .carousel-inner
-    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
-    + .carousel-item
-    + .carousel-item {
-    -webkit-transition: none;
-    transition: none;
-  }
-  .depo .carousel-inner .carousel-item-next,
-  .depo .carousel-inner .carousel-item-prev {
-    position: relative;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  .depo
-    .carousel-inner
-    .active.carousel-item
-    + .carousel-item
-    + .carousel-item {
-    position: absolute;
-    top: 0;
-    right: -50%;
-    z-index: -1;
-    display: block;
-    visibility: visible;
-  }
-  /* left or forward direction */
-  .depo .active.carousel-item-left + .carousel-item-next.carousel-item-left,
-  .depo .carousel-item-next.carousel-item-left + .carousel-item,
-  .depo
-    .carousel-item-next.carousel-item-left
-    + .carousel-item
-    + .carousel-item,
-  .depo
-    .carousel-item-next.carousel-item-left
-    + .carousel-item
-    + .carousel-item {
-    position: relative;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-  }
-  /* farthest right hidden item must be abso position for animations */
-  .depo .carousel-inner .carousel-item-prev.carousel-item-right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    display: block;
-    visibility: visible;
-  }
-  /* right or prev direction */
-  .depo .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-  .depo .carousel-item-prev.carousel-item-right + .carousel-item,
-  .depo
-    .carousel-item-prev.carousel-item-right
-    + .carousel-item
-    + .carousel-item,
-  .depo
-    .carousel-item-prev.carousel-item-right
-    + .carousel-item
-    + .carousel-item {
-    position: relative;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-    display: block;
-    visibility: visible;
-  }
-}
-
-
 @media only screen and (max-width: 768px) {
-  .sobre .row .col-md-6 .beneficios video {
-    display: none;
-  }
-
-  .comprar .row .col-md-6 .phone img {
-    display: none;
-  }
 
   .sobre .row .col-md-6 .cartao-about {
     position: initial;
@@ -899,7 +832,7 @@ body {
 }
 
 .text-white h3 {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 900;
   line-height: 3rem;
   text-transform: uppercase;
@@ -934,7 +867,7 @@ body {
 }
 
 .trabalhe .text-blue h2 {
-  font-size: 32px;
+  font-size: 42px;
   font-weight: 900;
   line-height: 3rem;
   text-transform: uppercase;
