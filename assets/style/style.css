@@ -641,33 +641,45 @@ body {
 /* Section - 4 depoimentos */
 
 @media (max-width: 768px) {
-  .depo .depoimentos h1 {
+
+  .depo .row {
+    margin: initial!important;
+  }
+
+  .depo .col-depo  {
+    padding: 2em!important;
+  }
+
+
+  .depo .col-depo h1 {
     text-align: center;
   }
 
-  .depo .depoimentos p {
+  .depo .col-depo p {
     text-align: center;
-    padding-right: initial;
+    padding: initial;
   }
 
   .depo .img-depoimentos img{
     display: none;
   }
 
-  .depo .row {
-    left: 0vmin !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: 0px;
-    margin-left: 0px;
+  .depo .col-depo .col-md-12 {
+    padding: initial!important;
   }
 
-  .depo .carousel .carousel-inner .carousel-item .card .card-body {
-    text-align: center;
+  .depo .card-body {
+    padding: 1.25em!important;
   }
+
+  .img-rounded  {
+    position: relative;
+    top: 20px!important;
+    right: 0px!important;
+    text-align: center;
+    z-index: 1;
+  }
+  
 }
 
 .depo {
@@ -705,7 +717,7 @@ body {
   padding: 0em 4em;
 }
 
-.depoimentos h1 {
+.col-depo h1 {
   color: #ffffff;
   font-size: 36px;
   font-weight: 900;
@@ -713,7 +725,7 @@ body {
   text-align: left;
   text-transform: uppercase;
 }
-.depoimentos p {
+.col-depo p {
   font-size: 20px;
   color: #fff;
   font-weight: 500;
