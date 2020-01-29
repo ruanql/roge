@@ -45,7 +45,8 @@ $(window).scroll(function () {
          infinite: true,
          arrows: true,
          dots: false,
-         slidesToShow: 1
+         slidesToShow: 1,
+         slidesToScroll: 1
      }
   }
   ]

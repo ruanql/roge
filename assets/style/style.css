@@ -445,16 +445,24 @@ body {
 
 
 @media (max-width: 768px) {
-  .sobre .row .col-md-6 .beneficios video {
-    width: 100%;
-  }
+
+    .revolucao {
+      top: 50px;
+      position: relative;
+      z-index: 2;
+      overflow-y: hidden;
+    }
+
+    .varejo {
+      padding-top: 30px;
+    }
 
   .sobre .row .col-md-6 .cartao-about {
     text-align: center !important;
   }
 
   .marcas .row .text-white {
-    padding: 10vmin 1vmin !important;
+    padding: 10vmin 1vmin 0 1vmin !important;
     text-align: center !important;
   }
 
@@ -475,7 +483,7 @@ body {
   background-size: cover;
   background-position: auto;
   width: 100%;
-  height: 75vh;
+  height: 70vh;
   position: relative;
 }
 
@@ -636,6 +644,11 @@ body {
     text-align: center;
   }
 
+  .buy .text-cards {
+    padding: 8em 5em 0 5em;
+  }
+  
+
 }
 
 /* Section - 4 depoimentos */
@@ -666,6 +679,7 @@ body {
 
   .depo .col-depo .col-md-12 {
     padding: initial!important;
+    text-align: center;
   }
 
   .depo .card-body {
@@ -766,6 +780,10 @@ body {
 
 @media only screen and (max-width: 768px) {
 
+  .sobre {
+    padding-top: 10px;
+  }
+
   .sobre .row .col-md-6 .cartao-about {
     position: initial;
     width: initial;
@@ -779,20 +797,6 @@ body {
     text-align: center !important;
   }
 
-  .fundacao {
-    padding: 0 5vmin !important;
-  }
-
-  .text-fund {
-    color: #fff;
-    padding-top: 20vmin;
-    text-align: center;
-  }
-
-  .trabalhe p {
-    padding: 0 5vmin !important;
-  }
-
   .social .row .brand {
     text-align: center !important;
   }
@@ -803,10 +807,7 @@ body {
 
   footer {
     text-align: center;
-  }
-
-  footer {
-    text-align: center;
+    padding-top: 35px!important;
   }
 
   .footer .input-group {
@@ -916,7 +917,9 @@ body {
     text-align: center;
   }
 
-  
+  .trabalhe {
+    background-position: right;
+  }
 
   .trabalhe .row .text-blue {
     text-align: center;
@@ -980,6 +983,10 @@ body {
   background-color: #000000;
   color: #fff;
   padding-top: 100px;
+}
+
+footer hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.17)!important;
 }
 
 .footer a {
