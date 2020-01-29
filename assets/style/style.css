@@ -164,7 +164,7 @@ body {
 }
 
 .main-header {
-  background: url("/assets/img/bg-header.jpg") no-repeat center;
+  background: url("../img/bg-header.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
   padding-top: 100px;
@@ -221,7 +221,7 @@ body {
 
 @media (max-width: 768px) {
   .main-header {
-    background: url("/assets/img/bg-header.jpg") no-repeat center;
+    background: url("../img/bg-header.jpg") no-repeat center;
     background-size: cover;
     background-color: #b1b1b1;
     background-blend-mode: darken;
@@ -410,7 +410,7 @@ body {
 
 .varejo {
   background-color: #414141;
-  background-image: url("/assets/img/futuro-roge.jpg");
+  background-image: url("../img/futuro-roge.jpg");
   background-size: cover;
   background-position: auto;
   background-blend-mode: overlay;
@@ -480,7 +480,7 @@ body {
 /* Section-2 marcas */
 
 .marcas {
-  background-image: url("/assets/img/marcas.jpg");
+  background-image: url("../img/marcas.jpg");
   background-size: cover;
   background-position: auto;
   width: 100%;
@@ -595,7 +595,7 @@ body {
 }
 
 .buy .card-online {
-  background: url('/assets/img/card-online.png') no-repeat;
+  background: url('../img/card-online.png') no-repeat;
   background-position: center;
   height: 310px;
   transition: all ease 0.2s;
@@ -608,7 +608,7 @@ body {
 }
 
 .buy .card-raiz {
-  background: url('/assets/img/card-raiz.png') no-repeat;
+  background: url('../img/card-raiz.png') no-repeat;
   background-position: center;
   height: 310px;
   transition: all ease 0.2s;
@@ -621,7 +621,7 @@ body {
 }
 
 .buy .card-inbox {
-  background: url('/assets/img/card-inbox.png') no-repeat;
+  background: url('../img/card-inbox.png') no-repeat;
   background-position: center;
   height: 310px;
   transition: all ease 0.2s;
@@ -836,7 +836,7 @@ body {
 
 .fundacao {
   background-color: #414141;
-  background-image: url("/assets/img/fundacao.jpg");
+  background-image: url("../img/fundacao.jpg");
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
@@ -879,7 +879,7 @@ body {
 
 .trabalhe {
   background-color: #acacac;
-  background-image: url("/assets/img/trabalhe-roge.jpg");
+  background-image: url("../img/trabalhe-roge.jpg");
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
