@@ -225,7 +225,7 @@ body {
     background-size: cover;
     background-color: #b1b1b1;
     background-blend-mode: darken;
-    height: 90vh;
+    height: 100vh;
     padding-top: 20vmin;
   }
   .main-header video {
@@ -454,7 +454,8 @@ body {
     }
 
     .varejo {
-      padding-top: 30px;
+      padding: 10vmin;
+      height: auto;
     }
 
   .sobre .row .col-md-6 .cartao-about {
@@ -485,10 +486,11 @@ body {
   width: 100%;
   height: 70vh;
   position: relative;
+  padding: 10vmin 0;
 }
 
 .marcas .row .text-white {
-  padding: 15vmin 0vmin 5vmin 0vmin;
+  padding: 0vmin 0vmin 5vmin 0vmin;
 }
 
 .marcas .row .logomarcas {
@@ -533,6 +535,13 @@ body {
 
 .slick-dots {
   bottom: initial!important;
+}
+
+@media (max-width: 768px) {
+  .marcas {
+    height: auto;
+    padding: 10vmin 0;
+  }
 }
 
 /* Section - 3 comprar */
@@ -776,6 +785,14 @@ body {
   color: #2e3545;
   padding-right: initial;
   font-size: 16px;
+}
+
+@media only screen and (max-width: 1400px) {
+
+.depo .img-depoimentos {
+  top: 185px;
+}
+
 }
 
 @media only screen and (max-width: 768px) {
