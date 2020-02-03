@@ -602,6 +602,10 @@ body {
   transition: all ease 0.2s;
 }
 
+.buy .card-online a {
+  text-decoration: none;
+}
+
 .buy .card-online:hover {
   cursor: pointer;
   -webkit-transform: scale(1.05);
@@ -615,6 +619,10 @@ body {
   transition: all ease 0.2s;
 }
 
+.buy .card-raiz {
+  text-decoration: none;
+}
+
 .buy .card-raiz:hover {
   cursor: pointer;
   -webkit-transform: scale(1.05);
@@ -626,6 +634,10 @@ body {
   background-position: center;
   height: 310px;
   transition: all ease 0.2s;
+}
+
+.buy .card-inbox a {
+  text-decoration: none;
 }
 
 .buy .card-inbox:hover {
