@@ -172,6 +172,12 @@ body {
   background-blend-mode: darken;
 }
 
+.main-header {
+  background: url("../img/chega-mais/bg-chega-mais.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
 .menu {
   background-color: #fff;
   display: -ms-flexbox;
@@ -361,6 +367,30 @@ body {
   padding-left: 16px;
 }
 
+.title-hashtag {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.title-content {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.text-content {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
 /* Section-1 sobre */
 
 .sobre {
@@ -476,6 +506,14 @@ body {
     padding: 15vmin 5vmin 0vmin 5vmin;
     text-align: center;
   }
+}
+
+/* Section-1 historia */
+
+.historia {
+  padding: 100px 0;
+  background: var(--bggradient);
+  height: auto;
 }
 
 /* Section-2 marcas */
