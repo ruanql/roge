@@ -172,7 +172,7 @@ body {
   background-blend-mode: darken;
 }
 
-.main-header {
+.bg-chega-mais {
   background: url("../img/chega-mais/bg-chega-mais.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
@@ -228,6 +228,15 @@ body {
 @media (max-width: 768px) {
   .main-header {
     background: url("../img/bg-header.jpg") no-repeat center;
+    background-size: cover;
+    background-color: #b1b1b1;
+    background-blend-mode: darken;
+    height: 100vh;
+    padding-top: 20vmin;
+  }
+
+  .bg-chega-mais {
+    background: url("../img/chega-mais/bg-chega-mais.jpg") no-repeat center left;
     background-size: cover;
     background-color: #b1b1b1;
     background-blend-mode: darken;
