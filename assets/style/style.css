@@ -517,13 +517,6 @@ body {
   }
 }
 
-/* Section-1 historia */
-
-.historia {
-  padding: 100px 0;
-  background: var(--bggradient);
-  height: auto;
-}
 
 /* Section-2 marcas */
 
@@ -892,7 +885,18 @@ body {
   }
 }
 
-/* Section inovação */
+/* ----------- CHEGA MAIS ------------- */
+
+/* Section-1 historia */
+
+.historia {
+  padding: 100px 0;
+  background: var(--bggradient);
+  height: auto;
+}
+
+
+/* Section-2 inovação */
 
 .inovacao {
   background-color: #414141;
@@ -948,6 +952,45 @@ body {
 .icon-heart:hover {
   transform: scale(1.2);
 }
+
+/* Section-3 futuro */
+
+.futuro {
+  padding: 100px 0;
+  background-image: url("../img/chega-mais/bg-chega-mais-futuro.jpg");
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+.futuro .text-content {
+  padding: 0 10em 0 10em;
+}
+
+@media only screen and (max-width: 768px) {
+  .futuro .text-content {
+    padding: initial;
+  }
+}
+
+/* Section-4 propósito */
+
+.proposito {
+  padding: 100px 0;
+  background-image: url("../img/chega-mais/bg-proposito.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: auto;
+}
+
+.proposito .text-content {
+  padding: 0 8em 0 5em;
+  margin-top: 2em;
+}
+
+
+/* --------------------- */
 
 /* Section fundacao */
 
