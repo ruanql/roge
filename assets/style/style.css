@@ -989,6 +989,88 @@ body {
   margin-top: 2em;
 }
 
+/* Section-5 valores */
+
+.valores {
+  background: var(--bggradient);
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.valores .img-valor {
+  top: 160px;
+  left: -130px;
+}
+
+.valores .img-valor img {
+  width: 70vw;
+}
+
+.valores .col-valor {
+  padding: 5em;
+}
+
+.depo .col-valor .col-md-12 {
+  padding: 0em 4em;
+}
+
+.col-valor h1 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+.col-valor p {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: left;
+  padding-right: 5em;
+}
+
+/* Section-6 numeros */
+
+.numeros {
+  background-color: #414141;
+  background-image: url("../img/chega-mais/bg-numeros.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.numeros .icon-numbers {
+  transition: 0.4s ease;
+}
+
+.numeros .icon-numbers:hover {
+  transform: scale(1.1);
+}
+
+/* Section-6 ser roge */
+
+.ser-roge {
+  padding: 100px 0;
+  background: #fff;
+  height: auto;
+  text-align: center;
+}
+
+.ser-roge .btn-red {
+  text-decoration: none;
+}
+
+
+
 
 /* --------------------- */
 
