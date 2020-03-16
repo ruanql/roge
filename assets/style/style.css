@@ -1036,6 +1036,20 @@ body {
   margin-top: 2em;
 }
 
+@media only screen and (max-width: 768px) {
+
+  .proposito .title-content {
+    text-align: center;
+    padding: initial;
+  }
+
+  .proposito .text-content {
+    text-align: center;
+    padding: initial;
+    margin-top: 2em;
+  }
+}
+
 /* Section-5 valores */
 
 .valores {
@@ -1081,6 +1095,25 @@ body {
   padding-right: 5em;
 }
 
+@media only screen and (max-width: 768px) {
+
+
+  .valores .img-valor {
+    display: none;
+  }
+  
+  .valores .col-valor {
+    padding: initial;
+    text-align: center!important;
+  }
+
+  .valores .col-valor h1,
+  .valores .col-valor p {
+    padding: initial;
+    text-align: center!important;
+  }
+
+}
 /* Section-6 numeros */
 
 .numeros {
@@ -1178,6 +1211,14 @@ body {
 
 .como-fazemos .text-content {
   padding: 0 10em 0 10em;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .como-fazemos .text-content {
+    padding: initial;
+  }
+
 }
 
 /* Section-2 reconhece depoimentos */
@@ -1279,6 +1320,14 @@ body {
   background-blend-mode: overlay;
   height: auto;
   position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .beneficios-site img {
+    width: 100%;
+  }
+
 }
 
 /* Section-3 onde estamos */
