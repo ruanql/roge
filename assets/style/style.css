@@ -154,6 +154,7 @@ section {
   --dark-blue: #061a3b;
   --light-black: #242424;
   --bggradient: linear-gradient(to bottom, #fe053f, #d31c30);
+  --gradientblue: linear-gradient(to right, #345f96, #35aeff);
   --light-gray: rgba(255, 255, 255, 0.877);
 }
 
@@ -174,6 +175,18 @@ body {
 
 .bg-chega-mais {
   background: url("../img/chega-mais/bg-chega-mais.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.bg-marcas{
+  background: url("../img/futuro-roge.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.bg-mudar-sempre{
+  background: url("../img/mudar-o-mundo/bg-mudar-sempre.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
 }
@@ -243,6 +256,25 @@ body {
     height: 100vh;
     padding-top: 20vmin;
   }
+
+  .bg-marcas{
+    background: url("../img/futuro-roge.jpg") no-repeat center;
+    background-size: cover;
+    background-color: #b1b1b1;
+    background-blend-mode: darken;
+    height: 100vh;
+    padding-top: 20vmin;
+  }
+
+  .bg-mudar-sempre{
+    background: url("../img/mudar-o-mundo/bg-mudar-sempre.jpg") no-repeat center left;
+    background-size: cover;
+    background-color: #b1b1b1;
+    background-blend-mode: darken;
+    height: 100vh;
+    padding-top: 20vmin;
+  }
+
   .main-header video {
     display: none;
   }
@@ -1049,12 +1081,22 @@ body {
 }
 
 .numeros .icon-numbers {
+  max-height: 85px;
   transition: 0.4s ease;
 }
 
 .numeros .icon-numbers:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
+
+.numeros .icon-dados .title-content {
+  line-height: normal;
+}
+
+.numeros .icon-dados .text-content {
+  line-height: normal;
+}
+
 
 /* Section-6 ser roge */
 
@@ -1070,6 +1112,141 @@ body {
 }
 
 
+/* --------------------- */
+
+/* ---------- Marcas ----------- */
+
+.numeros .icon-one { 
+  border-right: 1px solid #fff;
+}
+
+.numeros .icon-two { 
+  border-right: 1px solid #fff;
+}
+
+.numeros .icon-three { 
+  border-right: 1px solid #fff;
+}
+
+@media (max-width: 768px) {
+  .numeros .title-content { 
+    border-right: none;
+  }
+}
+
+.bg-red {
+  background: var(--bggradient);
+}
+
+/* --------------------- */
+
+/* ---------- Mudar o mundo ----------- */
+
+/* Section-1 conhecimento */
+
+.conhecimento {
+  padding: 100px 0;
+  height: auto;
+  text-align: center;
+}
+
+/* Section-2 Como fazemos */
+
+.como-fazemos {
+  padding: 100px 0;
+  background-image: url("../img/mudar-o-mundo/bg-como-fazemos.jpg");
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  text-align: center;
+}
+
+.como-fazemos .text-content {
+  padding: 0 10em 0 10em;
+}
+
+/* Section-2 reconhece depoimentos */
+
+.reconhece {
+  padding: 100px 0;
+  background-image: url("../img/mudar-o-mundo/bg-depoimentos.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: auto;
+}
+
+.reconhece .img-rounded  {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  margin-top: 1em;
+  margin-right: 2em;
+  z-index: 1;
+}
+
+.reconhece .img-rounded img {
+  border-radius: 10em;
+}
+
+.reconhece .card-body {
+  padding: 1.25em 1.25em 1.25em 3.25em;
+}
+
+.reconhece .card-title {
+  margin-bottom: 0rem;
+}
+
+.reconhece .card {
+  background: #eeeeee00;
+  border-radius: 1rem;
+}
+
+.reconhece .card h1 {
+  color: #000;
+  text-transform: none;
+}
+
+.reconhece .card .text-muted {
+  color: #333!important;
+  font-size: 1.2em;
+}
+
+.reconhece .card p {
+  color: #2e3545;
+  padding-right: initial;
+  font-size: 16px;
+}
+
+.reconhece .slick-dots li.slick-active button:before {
+  color: #cecece;
+  background-color: #cecece;
+}
+
+
+/* Section-4 quem acredita */
+
+.quem-acredita {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+}
+
+.quem-acredita .row .text-center {
+  padding: 100px 0;
+}
+
+/* Section-4 ajudar */
+
+.ajudar {
+  background: var(--gradientblue);
+  width: 100%;
+  height: auto;
+}
+
+.ajudar .btn-red {
+  text-decoration: none;
+}
 
 
 /* --------------------- */

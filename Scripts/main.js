@@ -85,3 +85,36 @@ $(document).ready(function(){
   ]
   });
 });
+
+// Carousel depoimentos reconhece
+
+$(document).ready(function(){
+  $('.depo-reconhece').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow: '<i class="left-arrow"></i>',
+  nextArrow: '<i class="right-arrow"></i>',
+  dots: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: 
+  [
+  {
+     breakpoint: 600,
+     settings: {
+         infinite: true,
+         arrows: true,
+         slidesToShow: 1
+     }
+  },
+  {
+     breakpoint: 480,
+     settings: {
+         infinite: true,
+         arrows: true,
+         slidesToShow: 1
+     }
+  }
+  ]
+  });
+});
