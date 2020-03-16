@@ -191,6 +191,12 @@ body {
   height: 100vh;
 }
 
+.bg-ser-roge{
+  background: url("../img/vem-ser-roge/bg-vem-ser-roge.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
 .menu {
   background-color: #fff;
   display: -ms-flexbox;
@@ -268,6 +274,15 @@ body {
 
   .bg-mudar-sempre{
     background: url("../img/mudar-o-mundo/bg-mudar-sempre.jpg") no-repeat center left;
+    background-size: cover;
+    background-color: #b1b1b1;
+    background-blend-mode: darken;
+    height: 100vh;
+    padding-top: 20vmin;
+  }
+
+  .bg-ser-roge{
+    background: url("../img/vem-ser-roge/bg-vem-ser-roge.jpg") no-repeat center left;
     background-size: cover;
     background-color: #b1b1b1;
     background-blend-mode: darken;
@@ -1248,6 +1263,38 @@ body {
   text-decoration: none;
 }
 
+
+/* --------------------- */
+
+/* ---------- Vem ser Roge ----------- */
+
+/* Section-2 benefícios site */
+
+.beneficios-site {
+  background-color: #414141;
+  background-image: url("../img/vem-ser-roge/bg-beneficios.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  height: auto;
+  position: relative;
+}
+
+/* Section-3 onde estamos */
+
+.onde-estamos {
+  overflow: hidden;
+}
+
+.onde-estamos .mapa img {
+  width: 100%;
+  transition: 0.4s ease;
+}
+
+.onde-estamos .mapa img:hover {
+  transform: scale(1.02);
+}
 
 /* --------------------- */
 

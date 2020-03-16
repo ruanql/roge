@@ -63,7 +63,7 @@ $(document).ready(function(){
   nextArrow: '<i class="right-arrow"></i>',
   dots: true,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 4000,
   responsive: 
   [
   {
@@ -96,7 +96,7 @@ $(document).ready(function(){
   nextArrow: '<i class="right-arrow"></i>',
   dots: true,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 4000,
   responsive: 
   [
   {
