@@ -239,6 +239,10 @@ body {
   color: #cb3638;
 }
 
+.main-header .menu .active {
+  color: #cb3638;
+}
+
 .main-header .menu ul a:hover img{
   transform: scale(1.1);
 }
@@ -682,6 +686,14 @@ body {
   text-transform: uppercase;
 }
 
+.buy .text-cards p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4rem;
+  text-transform: uppercase;
+}
+
 .buy .card-online {
   background: url('../img/card-online.png') no-repeat;
   background-position: center;
@@ -1061,12 +1073,12 @@ body {
 }
 
 .valores .img-valor {
-  top: 160px;
+  top: 115px;
   left: -130px;
 }
 
 .valores .img-valor img {
-  width: 70vw;
+  width: 65vw;
 }
 
 .valores .col-valor {
@@ -1126,6 +1138,10 @@ body {
   width: 100%;
   height: auto;
   position: relative;
+}
+
+.numeros .row .align-items-end {
+  padding: 0 8em 0 8em;
 }
 
 .numeros .icon-numbers {
@@ -1279,6 +1295,19 @@ body {
   background-color: #cecece;
 }
 
+/* Section-4 exatas e humanas */
+
+.bg-exatas {
+    background-color: #414141;
+    background-image: url("../img/bg-fundacao.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
 
 /* Section-4 quem acredita */
 
@@ -1289,7 +1318,7 @@ body {
 }
 
 .quem-acredita .row .text-center {
-  padding: 100px 0;
+  padding: 150px 0 100px 0;
 }
 
 /* Section-4 ajudar */
@@ -1322,6 +1351,15 @@ body {
   position: relative;
 }
 
+.beneficios-site img {
+  transition: 0.6s ease all;
+}
+
+.beneficios-site img:hover {
+  transform: scale(1.05);
+}
+
+
 @media only screen and (max-width: 768px) {
   
   .beneficios-site img {
@@ -1343,6 +1381,14 @@ body {
 
 .onde-estamos .mapa img:hover {
   transform: scale(1.02);
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .onde-estamos {
+    text-align: center;
+  }
+
 }
 
 /* --------------------- */
