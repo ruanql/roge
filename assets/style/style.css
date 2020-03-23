@@ -286,7 +286,7 @@ body {
   }
 
   .bg-ser-roge{
-    background: url("../img/vem-ser-roge/bg-vem-ser-roge.jpg") no-repeat center left;
+    background: url("../img/vem-ser-roge/bg-vem-ser-roge.jpg") no-repeat center;
     background-size: cover;
     background-color: #b1b1b1;
     background-blend-mode: darken;
@@ -1012,6 +1012,17 @@ body {
   transform: scale(1.2);
 }
 
+@media only screen and (max-width: 768px) {
+  .inovacao {
+    text-align: center;
+  }
+
+  .inovacao .row {
+    padding: inherit;
+  }
+  
+}
+
 /* Section-3 futuro */
 
 .futuro {
@@ -1345,7 +1356,7 @@ body {
   background-image: url("../img/vem-ser-roge/bg-beneficios.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center right;
   background-blend-mode: overlay;
   height: auto;
   position: relative;
